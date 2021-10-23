@@ -69,7 +69,7 @@ html, body {
 }
 
 ._container {
-  max-width: 991pxpx;
+  max-width: 991px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -123,15 +123,15 @@ textarea {
   padding-bottom: 130px;
 }
 
-@media (max-width: 991pxpx) {
+@media (max-width: 991px) {
   .main {
-    padding-top: calc(40px + 90 * ((100vw - 320px) / 671px));
+    padding-top: calc(40px + 90 * ((100vw - 320px) / 671));
   }
 }
 
-@media (max-width: 991pxpx) {
+@media (max-width: 991px) {
   .main {
-    padding-bottom: calc(40px + 90 * ((100vw - 320px) / 671px));
+    padding-bottom: calc(40px + 90 * ((100vw - 320px) / 671));
   }
 }
 
@@ -151,6 +151,8 @@ textarea {
   background: #fff;
   border-radius: 5px;
   padding: 50px 150px;
+  padding-left: 130px;
+  padding-right: 130px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -167,6 +169,18 @@ textarea {
   text-align: center;
 }
 
+@media (max-width: 991px) {
+  .main__body {
+    padding-left: calc(20px + 110 * ((100vw - 320px) / 671));
+  }
+}
+
+@media (max-width: 991px) {
+  .main__body {
+    padding-right: calc(20px + 110 * ((100vw - 320px) / 671));
+  }
+}
+
 .main__header > * {
   font-weight: 600;
   font-size: 20px;
@@ -176,9 +190,9 @@ textarea {
   margin-bottom: 40px;
 }
 
-@media (max-width: 991pxpx) {
+@media (max-width: 991px) {
   .main__header:not(:last-child) {
-    margin-bottom: calc(20px + 20 * ((100vw - 320px) / 671px));
+    margin-bottom: calc(20px + 20 * ((100vw - 320px) / 671));
   }
 }
 
@@ -195,9 +209,13 @@ textarea {
           align-items: center;
 }
 
+.main__form:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .main__input {
   padding: 20px 10px;
-  width: 40%;
+  width: 50%;
   text-align: center;
   border: 2px solid #000;
   border-radius: 5px;
@@ -225,7 +243,7 @@ textarea {
           justify-content: center;
   text-align: center;
   min-width: 160px;
-  padding: 15px 0;
+  padding: 13px 0;
   background: #663399;
   border-radius: 5px;
   -webkit-transition: all 0.3s ease 0s;
